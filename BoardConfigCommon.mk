@@ -51,7 +51,7 @@ TARGET_USES_OVERLAY         := true
 TARGET_USES_SF_BYPASS       := true
 BOARD_EGL_CFG               := device/xiaomi/msm8226-common/configs/egl.cfg
 
-TARGET_QCOM_DISPLAY_VARIANT := legacy
+TARGET_QCOM_DISPLAY_VARIANT := legacy-armani
 
 HAVE_ADRENO_SOURCE          := false
 OVERRIDE_RS_DRIVER          := libRSDriver_adreno.so
@@ -73,11 +73,11 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_DISPLAY_INSECURE_MM_HEAP := true
 
 # Audio
-TARGET_QCOM_AUDIO_VARIANT := caf
+TARGET_QCOM_AUDIO_VARIANT := caf-armani
 BOARD_USES_ALSA_AUDIO := true
 
 # Media
-TARGET_QCOM_MEDIA_VARIANT := legacy
+TARGET_QCOM_MEDIA_VARIANT := legacy-armani
 
 # QCOM enhanced A/V
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
