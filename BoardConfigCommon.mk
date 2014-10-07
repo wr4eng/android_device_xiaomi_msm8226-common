@@ -16,47 +16,45 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/msm8226-common/include
 
-BOARD_VENDOR 				:= xiaomi
+BOARD_VENDOR                := xiaomi
 
-TARGET_CPU_ABI 				:= armeabi-v7a
-TARGET_CPU_ABI2 			:= armeabi
-TARGET_CPU_SMP 				:= true
-TARGET_ARCH 				:= arm
-TARGET_ARCH_VARIANT 		:= armv7-a-neon
-ARCH_ARM_HAVE_ARMV7A 		:= true
-TARGET_CPU_VARIANT 			:= cortex-a7
-ARCH_ARM_HAVE_NEON 			:= true
-ARCH_ARM_HAVE_TLS_REGISTER 	:= true
+TARGET_CPU_ABI              := armeabi-v7a
+TARGET_CPU_ABI2             := armeabi
+TARGET_CPU_SMP              := true
+TARGET_ARCH                 := arm
+TARGET_ARCH_VARIANT         := armv7-a-neon
+ARCH_ARM_HAVE_ARMV7A        := true
+TARGET_CPU_VARIANT          := cortex-a7
+ARCH_ARM_HAVE_NEON          := true
+ARCH_ARM_HAVE_TLS_REGISTER  := true
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-TARGET_NO_BOOTLOADER 					:= true
+TARGET_NO_BOOTLOADER        := true
 
-TARGET_NO_RADIOIMAGE 		:= true
-TARGET_BOARD_PLATFORM 		:= msm8226
-TARGET_BOARD_PLATFORM_GPU 	:= qcom-adreno305
-
-
+TARGET_NO_RADIOIMAGE        := true
+TARGET_BOARD_PLATFORM       := msm8226
+TARGET_BOARD_PLATFORM_GPU   := qcom-adreno305
 
 # QCOM
-BOARD_USES_QCOM_HARDWARE 	:= true
-TARGET_USES_QCOM_BSP 		:= true
+BOARD_USES_QCOM_HARDWARE    := true
+TARGET_USES_QCOM_BSP        := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
 
 
 # Graphics
-USE_OPENGL_RENDERER 		:= true
-TARGET_USES_ION				:= true
+USE_OPENGL_RENDERER         := true
+TARGET_USES_ION             := true
 TARGET_USES_C2D_COMPOSITION := true
-TARGET_USES_OVERLAY 		:= true
+TARGET_USES_OVERLAY         := true
 TARGET_USES_SF_BYPASS       := true
-BOARD_EGL_CFG 				:= device/xiaomi/msm8226-common/configs/egl.cfg
+BOARD_EGL_CFG               := device/xiaomi/msm8226-common/configs/egl.cfg
 
 TARGET_QCOM_DISPLAY_VARIANT := legacy
 
-HAVE_ADRENO_SOURCE			:= false
-OVERRIDE_RS_DRIVER 			:= libRSDriver_adreno.so
+HAVE_ADRENO_SOURCE          := false
+OVERRIDE_RS_DRIVER          := libRSDriver_adreno.so
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -76,19 +74,14 @@ TARGET_DISPLAY_INSECURE_MM_HEAP := true
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf
-BOARD_USES_ALSA_AUDIO	  := true
-#AUDIO_FEATURE_DISABLED_COMPRESS_CAPTURE := true
-#AUDIO_FEATURE_DISABLED_DS1_DOLBY_DDP := true
+BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_DISABLED_SSR := true
-#AUDIO_FEATURE_DISABLED_INCALL_MUSIC := true
-#AUDIO_FEATURE_DISABLED_ANC_HEADSET := true
 
 # Media
 TARGET_QCOM_MEDIA_VARIANT := legacy
 
 # QCOM enhanced A/V
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA 	:= true
@@ -103,11 +96,10 @@ TARGET_NO_RPC := true
 #BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := msm8226
 
 # PowerHAL
-TARGET_POWERHAL_VARIANT	 := qcom
+TARGET_POWERHAL_VARIANT := qcom
 
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT := true
-
 
 BOARD_SEPOLICY_DIRS += \
         device/xiaomi/msm8226-common/sepolicy
@@ -118,7 +110,7 @@ BOARD_SEPOLICY_UNION += \
         app.te \
         device.te
         
-TARGET_RELEASETOOLS_EXTENSIONS 		:= device/xiaomi/msm8226-common
+TARGET_RELEASETOOLS_EXTENSIONS:= device/xiaomi/msm8226-common
 
 BOARD_USES_QC_TIME_SERVICES := true
 
@@ -127,4 +119,3 @@ TARGET_EXCLUDE_GOOGLE_IME := true
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 #PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
-
