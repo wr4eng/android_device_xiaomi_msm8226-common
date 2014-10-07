@@ -25,10 +25,6 @@ DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usbdriver.iso:system/media/usbdriver.iso
 
-# Spn config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
-
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapers \
@@ -121,12 +117,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     services-ext
-
-# for off charging mode
-#PRODUCT_PACKAGES += \
-#    charger \
-#    charger_res_images
-
+	
 # etc configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hosts:system/etc/hosts

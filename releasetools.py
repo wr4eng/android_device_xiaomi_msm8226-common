@@ -16,6 +16,11 @@ def Thanks(self):
 	self.script.AppendExtra('ui_print(" oubeichen,lwanggg");')
 	self.script.AppendExtra('ui_print("******************************************");')
 	self.script.AppendExtra('ui_print("    Design by syhost");')
+	self.script.AppendExtra('ui_print(" 新  ");')
+	self.script.AppendExtra('ui_print(" 浪  ");')
+	self.script.AppendExtra('ui_print(" 微  ");')
+	self.script.AppendExtra('ui_print(" 博  ");')
+	self.script.AppendExtra('ui_print("    weibo.com/syhost");')
 	self.script.AppendExtra('ui_print("===========================================");')
 	self.script.AppendExtra('ui_print(" ");')
 
