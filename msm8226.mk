@@ -193,7 +193,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Orion.ogg \
     ro.config.notification_sound=OnTheHunt.ogg \
     ro.config.alarm_alert=Cesium.ogg \
-    ro.config.ringtone_2=Orion.ogg
+    ro.config.ringtone_2=Themos.ogg
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
