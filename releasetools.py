@@ -10,10 +10,10 @@ TARGET_DIR = os.getenv('OUT')
 def Thanks(self):
 	self.script.AppendExtra('ui_print("===========================================");')
 	self.script.AppendExtra('ui_print("         Thanks: ");')
-	self.script.AppendExtra('ui_print(" syhost,tenfar,zhaochengw,airk,ivan19871002,");')
+	self.script.AppendExtra('ui_print(" syhost,tenfar,zhaochengw,ivan19871002,");')
 	self.script.AppendExtra('ui_print(" xuefy,suky,crazyi,windxixi,dianlujitao,");')
 	self.script.AppendExtra('ui_print(" wangsai008,bingo1991,cofface,chenxi.mao");')
-	self.script.AppendExtra('ui_print(" oubeichen,lwanggg");')
+	self.script.AppendExtra('ui_print(" oubeichen,lwanggg,airk");')
 	self.script.AppendExtra('ui_print("===========================================");')
 	self.script.AppendExtra('ui_print(" ");')
 
