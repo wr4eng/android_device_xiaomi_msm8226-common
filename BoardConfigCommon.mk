@@ -79,9 +79,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Media
 TARGET_QCOM_MEDIA_VARIANT := legacy-armani
 
-# QCOM enhanced A/V
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA 	:= true
 
